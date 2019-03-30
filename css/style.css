@@ -1,0 +1,363 @@
+@import 'bootstrap.min.css';
+@import 'animate.css';
+@import 'font.css';
+
+header {
+    top: 60px;
+    left: 60px;
+    width: 94%;
+    position: absolute;
+    z-index: 10;
+}
+
+
+header nav {
+    margin-right: 8%;
+}
+
+header nav ul {
+    display: flex;
+    margin: 12px;
+}
+
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #fff;
+    padding: 20px;
+    font-weight: 300; 
+    text-decoration: none;
+    transition: 1s;
+}
+
+header nav ul li a:hover {
+    color: #02ade5;
+    text-decoration: none;
+    
+}
+
+header .botoes {
+    float: right;
+}
+
+.btn {
+    padding: 10px 30px;
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 300; 
+    background: #02ade5;
+}
+
+.btn:hover {
+    background: #01befd;
+    color: #fff;
+}
+
+.bgborda {
+    border: 1px solid #02ade5;
+    color: #02ade5;
+    background: transparent;
+}
+
+.bgborda:hover {
+    border: 1px solid #02ade5;
+    color: #fff;
+}
+
+.bgrosa {
+    color: #fff;
+    margin-top: 50px;
+    background: #c61c8c;
+    width: 240px;
+    height: auto;
+    padding: 10px 0 10px;
+    text-align: center;
+    font-size: 21px;
+}
+
+.bgrosa:hover {
+    color: #fff;
+    background: #ff00aa;
+}
+
+.banner {
+    background: #091027 url(../images/bg-01.jpg) no-repeat;
+    background-size:cover;
+    height: 100vh; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    color: #fff;
+    font-size: 50px;
+}
+
+.banner .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+.banner .content h1 {
+    color: #fff;
+    font-size: 90px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+.banner .content strong {
+    font-weight: 900;
+    font-size: 105px;
+}
+.banner .content h2 {
+    color: #fff;
+    margin-top: 60px;
+    font-weight: 300;
+    margin-left: 5px;
+    font-size: 24px;
+}
+
+.banner .detalhes {
+    max-width: 350px;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 90vh;
+}
+.banner .detalhes .item{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    min-height: 70px;
+}
+
+.banner .detalhes .item::before {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.social_header {
+    bottom: 60px;
+    left: 60px;
+    width: 94%;
+    position: absolute;
+    z-index: 9999;
+}
+.social_header a {
+    color: #fff;
+    font-size: 25px;
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+
+.social_header a:hover {
+    color: #02ade5;
+}
+
+.scroll-line {
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    bottom: 12%;
+    transform: rotate(90deg);
+}
+.scroll-line::before {
+    width: 24px;
+    height: 1px;
+    position: absolute;
+    background: #fff;
+    content: "";
+    bottom: 7px;
+    z-index: 99;
+    left: 76px;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes scroll {
+    0%   {left: 76px;}
+    100% {left: 105px;}
+}
+  
+
+.scroll-line::after {
+    width: 54px;
+    height: 1px;
+    position: absolute;
+    background: #848893;
+    content: "";
+    bottom: 7px;
+    left: 76px;
+}
+  
+
+ .sec {
+     min-height: 800px;
+     background: #848893;
+ }
+
+
+ .infomoney {
+     background: url('../images/bg-02.jpg') no-repeat;
+     min-height: 600px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     justify-content: center;
+ }
+
+ .infomoney h2 {
+     color: #fff;
+     font-size: 36px;
+     max-width: 850px;
+     margin-right: 15%;
+     margin-bottom: 50px;
+     
+ }
+
+ .infomoney small {
+     font-size: 24px;
+     font-weight: 300;
+     color: #fff;
+     margin-top: 40px;
+     display: block;
+ }
+
+
+ .diferencial {
+     background: #fff;
+     min-height: 670px;
+     padding: 190px 0;
+}
+
+
+.diferencial h2 {
+    font-size: 36px;
+    max-width: 497px;
+}
+.diferencial h2 strong {
+    font-size: 46px;
+}
+
+
+.diferencial .detalhes {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.diferencial .detalhes .item{
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    min-height: 125px;
+}
+
+.diferencial .detalhes .item::before {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: #02ade5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.diferencial .colunas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.formulario {
+    min-height: 1163px;
+    padding: 200px 0 160px;
+    background: url('../images/bg-03.jpg') top center no-repeat; 
+}
+
+.formulario h2 {
+    color: #fff;
+    font-size: 36px;
+    max-width: 670px;
+    margin-right: 15%;
+    margin-bottom: 50px;
+}
+
+.formulario strong {
+    font-size: 46px;
+}
+
+.formulario p {
+    font-size: 24px;
+    margin-top: 50px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.formulario .direita p {
+    font-size: 16px;
+    margin-top: 0;
+    color: #fff;
+    margin-bottom: 150px;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin: 0 0 15px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #425269;
+}
+.formulario input:focus {
+    background: transparent;
+    border: 1px solid #02ade5;
+    color: #fff;
+}
+
+.formulario textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin: 0 0 15px;
+    height: 100px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #425269;
+}
+.formulario textarea:focus {
+    background: transparent;
+    border: 1px solid #02ade5;
+    color: #fff;
+}
