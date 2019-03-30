@@ -6,23 +6,41 @@
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>E-bit Fx</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="images/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#000">
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsivo.css" rel="stylesheet" type="text/css" />
 
 </head>
 <body class="animated fadeIn">
     
-    <header>
+    <header class="desktop">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-lg-2">
+                <div class="col-12 col-lg-3">
                     <div class="logo">
                         <img src="images/logo.png" alt="E-bit Fx">
                     </div>
                 </div>
-                <div class="col-lg-7 col-12">
+                <div class="col-lg-6 col-12">
                     <nav>
                         <ul>                              
-                            <li><a href="#">VANTAGENS</a></li>
+                            <li><a href="#vantagens" class="scrollLink">VANTAGENS</a></li>
                             <li><a href="#">QUEM SOMOS</a></li>
                             <li><a href="#">COMO FUNCIONA</a></li>
                             <li><a href="#">BLOG</a></li>
@@ -44,7 +62,85 @@
         <a href="#" title="Youtube"><i class="fab fa-youtube"></i></a>
         <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
     </div>
-    <span class="scroll-line">scroll down</span>
+
+    <!-- menu por cima-->
+
+    <div class="header_off" id="header_off">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-3">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="E-bit Fx">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <nav>
+                        <ul>                              
+                            <li><a href="#vantagens" class="scrollLink">VANTAGENS</a></li>
+                            <li><a href="#">QUEM SOMOS</a></li>
+                            <li><a href="#">COMO FUNCIONA</a></li>
+                            <li><a href="#">BLOG</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="botoes">
+                        <a href="#" class="btn bgborda animated ">LOGIN</a>
+                        <a href="#" class="btn bgazul">CADASTRAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- fim menu por cima-->
+
+    <!-- mobile -->
+
+    <header class="mob_header nav-down">
+        <div class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+                <div class="col">
+                    <div class="marca">
+                        <img src="images/logo.png" alt="Casa Garcia Gourmet">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <a onclick="openNave()" class="hamb icon-menu">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn hamb" onclick="closeNave()">&times;</a>
+        <nav class="navbar navbar-expand-md">
+            <ul>                              
+                <li><a href="#vantagens">VANTAGENS</a></li>
+                <li><a href="#">QUEM SOMOS</a></li>
+                <li><a href="#">COMO FUNCIONA</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        </nav>
+        <div class="outros">
+            <div class="right">
+                <div class="social">
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>                       
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- fim mobile -->
+
+    <span class="scroll-line"><span class="nome">scroll down</span></span>
     <section class="banner">
         <div class="container-fluid">
             <div class="row">
@@ -92,7 +188,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-12">
+                <div class="col-lg-10 offset-lg-1 col-12 col-md-12">
                     <div class="colunas">
                         <div class="detalhes">
                             <div class="item">Análise rápida e organizada
@@ -168,32 +264,126 @@
                             Vamos conversar?</p> 
 
                     <form action="">
-                        <input type="text" placeholder="Nome">
-                        <input type="text" placeholder="E-mail">
-                        <input type="text" placeholder="Cidade">
-                        <input type="text" placeholder="Telefone">
+                        <input type="text" class="inpt" placeholder="Nome">
+                        <input type="text" class="inpt" placeholder="E-mail">
+                        <input type="text" class="inpt" placeholder="Cidade">
+                        <input type="text" class="inpt" placeholder="Telefone">
                         <textarea placeholder="Mensagem"></textarea>
+                        <input type="submit" class="enviar btn bgrosa" value="ENVIAR">
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    <section class="sec">oi</section>
-    <section class="sec">oi</section>
+    <section class="newsletter"  id="vantagens"> 
+        <h2>Inscreva-se em nossa newsletter</h2>
+        <div class="forms">  
+            <form action="">
+                <input type="email" placeholder="Insira seu e-mail aqui" class="inpt">
+                <input type="submit" class="send">
+                
+            </form>
+        </div>
+    </section>
+    <section class="mapa">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-5 offset-lg-2">
+                    <div class="content">
+                        <h2>
+                            unidade 1
+                        </h2>
+                        <div class="traco" style="margin-left: -60px;"><img src="images/traco.png" alt="traço"></div>
+
+                        <p>São Paulo Avenida Paulista<br>
+                            2.202 Edifício Paulista<br>
+                            1191234-5678<br>
+                            atendimento@e-bitfx.com
+                        </p>
+                        <a href="#" class="btn bgborda" target="_blank"><i class="fas fa-map-marker-alt"></i> NO MAPA  </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 direita">
+                    <div class="content">
+                        <h2>
+                            unidade 2
+                        </h2>
+                        <div class="traco" style="margin-left: -60px;"><img src="images/traco.png" alt="traço"></div>
+                        <p>São Paulo Avenida Paulista<br>
+                            2.202 Edifício Paulista<br>
+                            1191234-5678<br>
+                            atendimento@e-bitfx.com
+                        </p>
+                        <a href="#" class="btn bgborda" target="_blank"><i class="fas fa-map-marker-alt"></i> NO MAPA  </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <h2>logo</h2>
-        <div class="social">
-            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" title="Youtube"><i class="fab fa-youtube"></i></a>
-            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-center flex-wrap">
+                    <img src="images/logo_sm.png" alt="E-bit Fx">
+                    <div class="social">
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Youtube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p>
+                        A E-Bit fx informa que as transações digitais realizadas na empresa não são valores mobiliários regulados pela CVM – Comissão de Valores Mobiliários. É importante destacar ao usuário que os Ativos Digitais não possuem qualquer garantia do Fundo Garantidor de Crédito – FGC, de conversão para moedas oficiais, como Real ou Dólar, além de outros ativos digitais. Não temos lastreamento em ativos de qualquer espécie. A responsabilidade pelos riscos inerentes à compra de moedas digitais é do Cliente! Antes de executar quaisquer operações na empresa, o cliente deve certificar-se dos riscos, porque as criptomoedas apresentam volatilidade em relação aos preços, podendo existir a possibilidade de perda do capital investido. A Ebit-fx não responsabiliza-se por decisões de investimentos que venham a ser tomadas com base nas informações divulgadas por terceiros e exime-se de qualquer responsabilidade por prejuízos futuros. Informações de fechamento devem ser feitas por consultores meramente credenciados pela nossa empresa. Nosso propósito e evoluir financeiramente com nossos clientes e educar financeiramente para as transações seguras de criptoativos. Um modelo de negócio do futuro, mas que já está acontecendo! Estamos à disposição para dúvidas e esclarecimentos. Informações adicionais podem ser adquiridas na nossa Central de Atendimento pelo número 18 3637-6500 ou pelo nosso e-mail atendimento@e-bitfx.com Venha para a E-Bitfx! Seja digital! Nós fazemos o futuro acontecer agora!
+                    </p>
+                </div>
+            </div>
         </div>
+        
     </footer>
 
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.min.js"></script>
+
+    <script>
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("header_off").style.top = "-100px";
+        } else {
+            document.getElementById("header_off").style.top = "0px";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+        
+        function openNave() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+        function closeNave() {
+            document.getElementById("mySidenav").style.width = "0";
+        }    
+
+        $('.sidenav a').click(function(){
+        $('#mySidenav').css("width", "0");
+        });
+
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.hash = hash;
+            });
+        }});
+
+    </script>
+
   </body>
 </html>

@@ -1,0 +1,227 @@
+@media (max-width: 1700px) {
+	.banner {
+		height: auto;
+	}
+	.banner .content h1 {
+		font-size: 58px;
+	}
+	.banner .content strong {
+		font-size: 75px;
+	}
+}
+
+@media (max-width: 1400px) {
+	header nav {
+		margin-right: 0;
+	}
+	.btn {
+		padding: 10px 15px;
+	}
+}
+
+@media (max-width: 1299px) {
+	.desktop {
+		display: none;
+	}
+	.social_header {
+		display: none;
+	}
+}
+
+@media (max-width: 1299px) {
+	.header_off {
+		display: none;
+	}
+	.mob_header {
+		background: #000;
+		opacity: 1;
+		position: fixed;
+		transition: all 0.3s ease-in-out 0s;
+		width: 100%;
+		z-index: 99;
+		top: 0;
+		display: block;
+		height: auto;
+		padding: 10px 0;
+		left: 0;
+	}
+	.mob_header .marca img {
+		margin: 0;
+		max-width: 130px;
+	}
+	.sidenav {
+		display: block;
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 999;
+		top: 0;
+		right: 0;
+		background-color: #19045f;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 0;
+		padding-bottom: 60px;
+	}
+	.sidenav .social {
+		padding: 15px;
+	}
+	.sidenav ul {
+		width: 1920px;
+		padding: 0;
+	}
+	.sidenav .navbar {
+		margin: 0;
+		padding: 0;
+	}
+	.sidenav nav .navbar-nav {
+		width: 100%;
+	}
+	.sidenav nav .navbar-nav a {
+		display: block;
+		padding: 10px 15px;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+	.sidenav nav .navbar-nav .dropdown-menu {
+		padding: 0;
+	}
+	.sidenav nav li {
+		list-style: none;
+		border-bottom: 1px solid rgba(220, 220, 220, 0.17);
+	}
+	.sidenav nav li:hover {
+		background: #484848;
+	}
+	.sidenav nav .active {
+		background: #484848;
+	}
+	.sidenav nav .active a {
+		color: #ccc;
+	}
+	.sidenav .social a {
+		color: #fff;
+		display: inline-block;
+		margin: 0 5px;
+		font-size: 25px;
+	}
+	.sidenav li a {
+		color: #fff;
+		display: block;
+		width: 100%;
+		padding: 10px 20px;
+	}
+	.sidenav a:hover {
+		color: #f1f1f1;
+	}
+	.sidenav .closebtn {
+		position: absolute;
+		top: -13px;
+		right: 15px;
+		font-size: 45px;
+		margin-left: 50px;
+		color: #fff;
+		z-index: 999;
+	}
+	.icon-menu {
+		cursor: pointer;
+		font-size: 20px;
+		color: #fff !important;
+		float: right;
+		display: block;
+	}
+	.icon-menu:hover {
+		color: #000 !important;
+	}
+	.icon-menu:focus {
+		color: #000;
+	}
+	.banner .content {
+		min-height: 90vh;
+	}
+	.banner .content h1 {
+		font-size: 48px;
+		margin-bottom: 20px;
+	}
+	.banner .content strong {
+		font-size: 52px;
+	}
+	.banner .content h2 {
+		margin-top: 20px;
+		font-size: 18px;
+	}
+	.banner .btn {
+		margin-top: 20px;
+	}
+	.traco {
+		margin: 0 !important;
+	}
+	.scroll-line {
+		right: 0;
+		left: inherit;
+	}
+	.banner .detalhes {
+		margin-left: 0;
+		min-height: 69vh;
+	}
+	.infomoney h2 {
+		font-size: 26px;
+		margin: 20px;
+	}
+	.infomoney small,
+	.infomoney .traco {
+		margin: 20px !important;
+	}
+	.diferencial {
+		padding: 60px 0;
+	}
+	.diferencial .traco {
+		margin-left: 0 !important;
+		margin-bottom: 40px !important;
+	}
+	.formulario {
+		min-height: 0;
+		padding: 50px 0 50px;
+		background-color: #091027;
+	}
+	.formulario p {
+		font-size: 16px;
+		margin-top: 20px;
+	}
+	.formulario h2 {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.formulario strong {
+		font-size: 27px;
+	}
+	.formulario .direita p {
+		margin-bottom: 20px;
+	}
+	.newsletter h2 {
+		font-size: 26px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.newsletter .inpt {
+		width: 100%;
+	}
+	.mapa {
+		padding: 20px;
+		min-height: 0;
+	}
+	.mapa .content {
+		margin-bottom: 40px;
+	}
+	footer {
+		padding: 40px 0;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.banner .detalhes {
+		margin-left: 24%;
+		min-height: 60vh;
+	}
+}
