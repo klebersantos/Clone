@@ -1,5 +1,7 @@
 <?php
 
+add_theme_support('post-thumbnails'); 
+
 add_theme_support( 'custom-logo' );
 function themename_custom_logo_setup() {
     $defaults = array(

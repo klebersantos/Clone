@@ -72,8 +72,8 @@
                 </div>
                 <div class="col-lg-3 col-12">
                     <div class="botoes">
-                        <a href="#" class="btn bgborda animated ">LOGIN</a>
-                        <a href="#" class="btn bgazul">CADASTRAR</a>
+                        <a href="<?php the_field('login', option); ?>" class="btn bgborda animated ">LOGIN</a>
+                        <a href="<?php the_field('cadastrar', option); ?>" class="btn bgazul">CADASTRAR</a>
                     </div>
                 </div>
             </div>
@@ -96,12 +96,6 @@
     </div>
     <?php endif; ?>
 
-    <!-- <div class="social_header">
-        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" title="Youtube"><i class="fab fa-youtube"></i></a>
-        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-    </div> -->
 
     <!-- menu por cima-->
 
@@ -148,8 +142,8 @@
                 </div>
                 <div class="col-lg-3 col-12">
                     <div class="botoes">
-                        <a href="#" class="btn bgborda animated ">LOGIN</a>
-                        <a href="#" class="btn bgazul">CADASTRAR</a>
+                        <a href="<?php the_field('login', option); ?>" class="btn bgborda animated ">LOGIN</a>
+                        <a href="<?php the_field('cadastrar', option); ?>" class="btn bgazul">CADASTRAR</a>
                     </div>
                 </div>
             </div>

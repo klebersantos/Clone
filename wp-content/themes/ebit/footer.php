@@ -28,7 +28,7 @@
                 </div>
                 <div class="col-12">
                     <p>
-                        A E-Bit fx informa que as transações digitais realizadas na empresa não são valores mobiliários regulados pela CVM – Comissão de Valores Mobiliários. É importante destacar ao usuário que os Ativos Digitais não possuem qualquer garantia do Fundo Garantidor de Crédito – FGC, de conversão para moedas oficiais, como Real ou Dólar, além de outros ativos digitais. Não temos lastreamento em ativos de qualquer espécie. A responsabilidade pelos riscos inerentes à compra de moedas digitais é do Cliente! Antes de executar quaisquer operações na empresa, o cliente deve certificar-se dos riscos, porque as criptomoedas apresentam volatilidade em relação aos preços, podendo existir a possibilidade de perda do capital investido. A Ebit-fx não responsabiliza-se por decisões de investimentos que venham a ser tomadas com base nas informações divulgadas por terceiros e exime-se de qualquer responsabilidade por prejuízos futuros. Informações de fechamento devem ser feitas por consultores meramente credenciados pela nossa empresa. Nosso propósito e evoluir financeiramente com nossos clientes e educar financeiramente para as transações seguras de criptoativos. Um modelo de negócio do futuro, mas que já está acontecendo! Estamos à disposição para dúvidas e esclarecimentos. Informações adicionais podem ser adquiridas na nossa Central de Atendimento pelo número 18 3637-6500 ou pelo nosso e-mail atendimento@e-bitfx.com Venha para a E-Bitfx! Seja digital! Nós fazemos o futuro acontecer agora!
+                    <?php the_field("texto", option) ?>         
                     </p>
                 </div>
             </div>
