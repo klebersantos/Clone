@@ -163,7 +163,7 @@
     <?php endwhile; endif;?>
     <?php wp_reset_postdata(); ?>
 
-    <section class="blog">
+    <section class="blog_">
 
         <div class="container">
             <div class="row">
@@ -228,11 +228,12 @@
     <section class="newsletter"  id="vantagens"> 
         <h2>Inscreva-se em nossa newsletter</h2>
         <div class="forms">  
-            <form action="">
-                <input type="email" placeholder="Insira seu e-mail aqui" class="inpt">
+                <!-- <input type="email" placeholder="Insira seu e-mail aqui" class="inpt">
                 <input type="submit" class="send">
+                 -->
                 
-            </form>
+                <?php  echo do_shortcode( '[contact-form-7 id="103" title="newsletter"]' ); ?>
+                
         </div>
     </section>
 

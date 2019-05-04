@@ -25,6 +25,7 @@
     <link href="<?php echo home_url(); ?>/wp-content/themes/ebit/css/style.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo home_url(); ?>/wp-content/themes/ebit/css/responsivo.css" rel="stylesheet" type="text/css" />
 
+
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class('animated', 'fadeIn'); ?>>

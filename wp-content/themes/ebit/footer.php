@@ -40,6 +40,46 @@
     <script src="<?php echo home_url(); ?>/wp-content/themes/ebit/js/popper.min.js"></script>
     <script src="<?php echo home_url(); ?>/wp-content/themes/ebit/js/bootstrap.min.js"></script>
     <script src="<?php echo home_url(); ?>/wp-content/themes/ebit/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+    <script type="text/javascript">
+
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+            swal(
+                'Mensagem enviada com sucesso! Obrigado.',
+                '',
+                'success'
+            )
+            
+            // Contato
+            if ( '103' == event.detail.contactFormId ) {
+                swal(
+                    'Mensagem enviada com sucesso! Obrigado.',
+                    '',
+                    'success'
+                )
+            }
+            
+        }, false );
+
+        document.addEventListener( 'wpcf7invalid', function( event ) {
+            swal(
+                'Atenção',
+                'Um ou mais campos possuem um erro. Verifique e tente novamente.',
+                'warning'
+            )
+        }, false );
+
+        document.addEventListener( 'wpcf7mailfailed', function( event ) {
+            swal(
+                'Erro',
+                'Ocorreu um erro ao tentar enviar sua mensagem. Tente novamente mais tarde.',
+                'error'
+            )
+        }, false );
+
+    </script>
+
 
     <script>
 
@@ -75,6 +115,10 @@
                 window.location.hash = hash;
             });
         }});
+
+      
+
+
 
     </script>
 
