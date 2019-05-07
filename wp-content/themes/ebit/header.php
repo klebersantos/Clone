@@ -133,6 +133,7 @@
                                 'theme_location' => ''
                         ));
                         ?>
+                        
                         <!-- <ul>                              
                             <li><a href="#vantagens" class="scrollLink">VANTAGENS</a></li>
                             <li><a href="#">QUEM SOMOS</a></li>
@@ -198,6 +199,10 @@
                         'theme_location' => ''
                 ));
             ?>
+            <div class="botoes" style="margin: 20px;">
+                            <a style="width: 100%; margin-bottom: 10px;" target="_blank" href="<?php the_field('login', option); ?>" class="btn bgborda animated ">LOGIN</a>
+                            <a style="width: 100%; margin-bottom: 10px;" target="_blank" href="<?php the_field('cadastrar', option); ?>" class="btn bgazul">CADASTRAR</a>
+                        </div>
             <!-- <ul>                              
                 <li><a href="#vantagens">VANTAGENS</a></li>
                 <li><a href="#">QUEM SOMOS</a></li>
