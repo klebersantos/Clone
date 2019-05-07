@@ -524,6 +524,7 @@ footer p {
 
 .lista {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 .lista .item {
@@ -540,6 +541,17 @@ footer p {
 	object-fit: cover;
 	height: 100%;
 	
+}
+
+.lista h6 {
+	margin: 10px 0;
+	display: block;
+}
+
+.lista a {
+	font-weight: bold;
+	font-family: "Roboto";
+	color: #01befd;
 }
 
 .lista .data {

@@ -47,6 +47,7 @@
 	}
 	.mob_header .marca img {
 		margin: 0;
+		height: auto;
 		max-width: 130px;
 	}
 	.sidenav {
@@ -216,6 +217,10 @@
 	}
 	footer {
 		padding: 40px 0;
+	}
+	.lista .item {
+		width: 100%;
+		margin: 0 0 20px 0;
 	}
 }
 

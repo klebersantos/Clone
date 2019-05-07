@@ -173,45 +173,50 @@
 
                     <div class="lista">
 
-                    
+                    <?php
 
-                    <?php include_once(ABSPATH . WPINC . '/feed.php');
-                        if(function_exists('fetch_feed')) {
-                            $feed = fetch_feed('https://blog.e-bitfx.com/feed/');
-                            if (!is_wp_error($feed)) : $feed->init();
-                                $feed->set_output_encoding('UTF-8');	// set encoding
-                                $feed->handle_content_type();		// ensure encoding
-                                $feed->set_cache_duration(21600);	// six hours in seconds
-                                $limit = $feed->get_item_quantity(10);	// get 10 feed items
-                                $items = $feed->get_items(0, $limit);	// set array
-                            endif;
-                        }
+                   
+                   $url="https://blog.e-bitfx.com/wp-json/wp/v2/posts?per_page=3";
+                   $ch = curl_init();
+                   curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+                   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                   curl_setopt($ch, CURLOPT_URL,$url);
+                   $result=curl_exec($ch);
+                   $posts = json_decode($result, true);
+                   foreach ($posts as $post) {
 
-                        if ($limit == 0) { 
-                            echo '<p>RSS Feed currently unavailable.</p>'; 
-                        } else {
-                            // display first five feed items$thumb_id = get_post_thumbnail_id();
-                            $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
-                            $thumb_url = $thumb_url_array[0];
-                            $blocks = array_slice($items, 0, 3);
-                            foreach ($blocks as $block) { ?>
-                                <div class="item">
+                   echo "<div class='item'>";
+                   echo "<div class='box_img'>";
+                   echo "<a title='".$post[title][rendered]."' target='_blank' href='".$post[link]."'>";
+                   echo "<img src='".$post[fimg_url]."'>";
+                   echo "</a>";
+                   echo "</div>";
+                   echo "<h6>";
+                   echo $post[post_date];
+                   echo $post[title][rendered];
+                   echo "</h6>";
+                   echo "<a target='_blank' href='".$post[link]."'>";
+                   echo "Veja mais";
+                   echo "</a>";
+                   echo "</div>";
+                   }
+
+                    ?>
+
+                                <!-- <div class="item">
                                     <div class="box_img">
-                                        <a href="<?php echo $block->get_permalink(); ?>">
-                                        <?php echo $thumb_url->get_the_post_thumbnail_url[0]; ?>
+                                        <a href="<?php // echo $block->get_permalink(); ?>">
                                         </a>
                                     </div>
-                                    <div class="data"> <?php echo $block->get_date("d/m/Y "); ?></div>
+                                    <div class="data"> <?php // echo $block->get_date("d/m/Y "); ?></div>
                                     <p>
-                                        <?php echo substr($block->get_description(), 0, 200); ?> 
+                                        <?php // echo substr($block->get_description(), 0, 200); ?> 
                                     </p>
-                                    <a target="_blank" href="<?php echo $block->get_permalink(); ?>">Veja mais</a>
+                                    <a target="_blank" href="<?php // echo $block->get_permalink(); ?>">Veja mais</a>
 
-                                </div>
-                            <?php }
-
-                            
-                        } ?>
+                                </div> -->
+                         
+                      
 
 
                         
